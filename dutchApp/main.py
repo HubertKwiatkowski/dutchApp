@@ -19,11 +19,16 @@ class MyGrid(GridLayout):
     def __init__(self, **kwargs):
         super(MyGrid, self).__init__(**kwargs)
         self.cols = 1
-        self.add_widget(Label(text='Dutch word'))
-        self.add_widget(Label(text='Polish word'))
-        self.add_widget(Label(text='Some other word'))
-        self.add_widget(Label(text='More other words'))
-        self.add_widget(Label(text='Different word'))
+
+        self.add_widget(Label(text='How many questions would you like to answer?', font_size=30))
+
+        self.questionNumber = TextInput(multiline=False)
+
+        self.add_widget(self.questionNumber)
+
+        self.submit = Button(text="New test", font_size=40)
+        self.add_widget(self.submit)
+
 
 
 class DutchPracticeApp(App):

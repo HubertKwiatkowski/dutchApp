@@ -18,7 +18,7 @@ def openCsv():
 def createEasyQuiz():
     pass
 
-def createNormalQuiz():
+def createNormalQuiz(questions):
     """Create the quiz."""
     
     order = vocabulary.copy()
@@ -54,6 +54,10 @@ def createNormalQuiz():
 def createHardQuiz():
     pass
 
-
-openCsv()
-createNormalQuiz()
+# TODO: change functions to work with kivy code:
+#   - taking data from main file, 
+#   - executing funtions from this file,
+#   - change functions to work with data from main file:
+#       - getting amount of questions
+#       - preparing questions and answers
+#       - reacting to button press
