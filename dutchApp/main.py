@@ -27,7 +27,13 @@ class MyGrid(GridLayout):
         self.add_widget(self.questionNumber)
 
         self.submit = Button(text="New test", font_size=40)
+        self.submit.bind(on_press=self.pressed)
         self.add_widget(self.submit)
+
+    def pressed(self, instance):
+        number = self.questionNumber.text
+        try
+        self.questionNumber.text = ''
 
 
 
