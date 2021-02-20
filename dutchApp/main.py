@@ -1,39 +1,41 @@
-import os
-import json
-
-
-import quiz
-
-
 import kivy
 from kivy.app import App
-from kivy.uix.label import Label
-from kivy.uix.gridlayout import GridLayout
-from kivy.uix.textinput import TextInput
-from kivy.uix.button import Button
-from kivy.uix.widget import Widget
+from kivy.lang import Builder
+from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.properties import ObjectProperty
 
 
-# jsonFilePath = os.path.join('.', 'dutchApp', 'data', 'vocabulary.json')
-#   with open(jsonFilePath, 'w', encoding='utf-8') as jsonf:
-#       jsonf.write(json.dumps(data, indent=4))
+import quiz as q
 
-class MyGrid(Widget):
+
+class MainWindow(Screen):
     pyNumber = ObjectProperty(None)
 
     def btn(self):
-        print(self.pyNumber.text)
-        self.pyNumber.text = ''
+        try:
+            self.questions = int(self.pyNumber.text)
+        except:
+            self.pyNumber.text = 0
+        
+    
+
+class QuestionWindow(Screen):
+    pass
+
+class WindowManager(ScreenManager):
+    pass
 
 
-class DutchPracticeApp(App):
+kv = Builder.load_file('my.kv')
+
+
+class DutchApp(App):
     def build(self):
-        return MyGrid()
+        return kv
 
 
 if __name__ == '__main__':
-    DutchPracticeApp().run()
+    DutchApp().run()
 
 
 # TODO: import words

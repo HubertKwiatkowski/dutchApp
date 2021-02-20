@@ -19,8 +19,3 @@ def updateJson(csvFilePath, jsonFilePath):
 
 
 updateJson(csvFilePath, jsonFilePath)
-
-"""
-def openJson(jsonFilePath):
-    with open(jsonFilePath, )
-"""

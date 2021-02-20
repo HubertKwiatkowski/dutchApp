@@ -1,0 +1,66 @@
+WindowManager:
+    MainWindow:
+    QuestionWindow:
+
+<MainWindow>:
+    name: 'start'
+    pyNumber: kvNumber
+
+    GridLayout:
+        cols:1
+        size: root.width - 100, root.height - 200
+        
+
+        Label:
+            font_size: 30
+            text: 'How many questions do you want to have?'
+
+        TextInput:
+            id: kvNumber
+            multiline: False
+
+        Button:
+            text: 'Start the Quiz'
+            on_release:
+                root.btn()
+                app.root.current= 'question'
+                root.manager.transition.direction= 'left'
+
+
+<QuestionWindow>:
+    name: 'question'
+
+    GridLayout:
+        cols:1
+        size: root.width, root.height
+
+
+        Label:
+            font_size: 20
+            text: 'polish word'
+
+        GridLayout:
+            cols:2
+
+            Button:
+                font_size: 20
+                text: 'first dutch word'
+
+            Button:
+                font_size: 20
+                text: 'second dutch word'
+
+            Button:
+                font_size: 20
+                text: 'third dutch word'
+
+            Button:
+                font_size: 20
+                text: 'fourth dutch word'
+
+
+        Button:
+            text: 'Go Back'
+            on_release:
+                app.root.current= 'start'
+                root.manager.transition.direction= 'right'
