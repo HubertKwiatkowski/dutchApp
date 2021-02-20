@@ -304,5 +304,359 @@
         "dutch": "volgen",
         "tip": "",
         "favourite": ""
+    },
+    "wiedziec ": {
+        "polish": "wiedziec ",
+        "dutch": "kennen",
+        "tip": "",
+        "favourite": ""
+    },
+    "byc w stanie ": {
+        "polish": "byc w stanie ",
+        "dutch": "kunnen",
+        "tip": "",
+        "favourite": ""
+    },
+    "poprzedni": {
+        "polish": "poprzedni",
+        "dutch": "vorige",
+        "tip": "",
+        "favourite": ""
+    },
+    "nastepny": {
+        "polish": "nastepny",
+        "dutch": "naast",
+        "tip": "",
+        "favourite": ""
+    },
+    "kolejny raz ": {
+        "polish": "kolejny raz ",
+        "dutch": "alweer",
+        "tip": "",
+        "favourite": ""
+    },
+    "zle": {
+        "polish": "zle",
+        "dutch": "verkeerd",
+        "tip": "",
+        "favourite": ""
+    },
+    "denerwujacy": {
+        "polish": "denerwujacy",
+        "dutch": "vervelend",
+        "tip": "",
+        "favourite": ""
+    },
+    "blisko ": {
+        "polish": "blisko ",
+        "dutch": "vlakbij",
+        "tip": "",
+        "favourite": ""
+    },
+    "zaprosic": {
+        "polish": "zaprosic",
+        "dutch": "uitnodigen",
+        "tip": "",
+        "favourite": ""
+    },
+    "wyglad zewnetrzny": {
+        "polish": "wyglad zewnetrzny",
+        "dutch": "het uiterlijk",
+        "tip": "",
+        "favourite": ""
+    },
+    "wynajmowac ": {
+        "polish": "wynajmowac ",
+        "dutch": "huur",
+        "tip": "",
+        "favourite": ""
+    },
+    "zwiedzac - bezoeken": {
+        "polish": "zwiedzac - bezoeken",
+        "dutch": "bezoeken",
+        "tip": "",
+        "favourite": ""
+    },
+    "podczas": {
+        "polish": "podczas",
+        "dutch": "tijdens",
+        "tip": "",
+        "favourite": ""
+    },
+    "wyporzyczac": {
+        "polish": "wyporzyczac",
+        "dutch": "lenen",
+        "tip": "",
+        "favourite": ""
+    },
+    "miejsce spotkania ": {
+        "polish": "miejsce spotkania ",
+        "dutch": "ontmoetingsplek",
+        "tip": "",
+        "favourite": ""
+    },
+    "czytac": {
+        "polish": "czytac",
+        "dutch": "lezen",
+        "tip": "",
+        "favourite": ""
+    },
+    "rozmiar": {
+        "polish": "rozmiar",
+        "dutch": "de maat",
+        "tip": "",
+        "favourite": ""
+    },
+    "lubic": {
+        "polish": "lubic",
+        "dutch": "lusten",
+        "tip": "",
+        "favourite": ""
+    },
+    "przynajmniej": {
+        "polish": "przynajmniej",
+        "dutch": "minstens",
+        "tip": "",
+        "favourite": ""
+    },
+    "brac": {
+        "polish": "brac",
+        "dutch": "nemen",
+        "tip": "",
+        "favourite": ""
+    },
+    "nigdy ": {
+        "polish": "nigdy ",
+        "dutch": "nooit",
+        "tip": "",
+        "favourite": ""
+    },
+    "nikt ": {
+        "polish": "nikt ",
+        "dutch": "niemand",
+        "tip": "",
+        "favourite": ""
+    },
+    "spieszyc sie ": {
+        "polish": "spieszyc sie ",
+        "dutch": "opschieten",
+        "tip": "",
+        "favourite": ""
+    },
+    "para (np. butow) ": {
+        "polish": "para (np. butow) ",
+        "dutch": "het paar",
+        "tip": "",
+        "favourite": ""
+    },
+    "chwycic": {
+        "polish": "chwycic",
+        "dutch": "pakken",
+        "tip": "",
+        "favourite": ""
+    },
+    "kazdy": {
+        "polish": "kazdy",
+        "dutch": "iederen",
+        "tip": "",
+        "favourite": ""
+    },
+    "w drodze": {
+        "polish": "w drodze",
+        "dutch": "onderweg",
+        "tip": "",
+        "favourite": ""
+    },
+    "godziny otwarcia": {
+        "polish": "godziny otwarcia",
+        "dutch": "de openingstijden",
+        "tip": "",
+        "favourite": ""
+    },
+    "pasowac do/z": {
+        "polish": "pasowac do/z",
+        "dutch": "passen bij/in",
+        "tip": "",
+        "favourite": ""
+    },
+    "placic karta": {
+        "polish": "placic karta",
+        "dutch": "pinnen",
+        "tip": "",
+        "favourite": ""
+    },
+    "plan": {
+        "polish": "plan",
+        "dutch": "de plattegrond",
+        "tip": "",
+        "favourite": ""
+    },
+    "doladowac ": {
+        "polish": "doladowac ",
+        "dutch": "oplanden",
+        "tip": "",
+        "favourite": ""
+    },
+    "plac ": {
+        "polish": "plac ",
+        "dutch": "het plein",
+        "tip": "",
+        "favourite": ""
+    },
+    "przyjemnosc": {
+        "polish": "przyjemnosc",
+        "dutch": "het plezier",
+        "tip": "",
+        "favourite": ""
+    },
+    "rozmawiac o...": {
+        "polish": "rozmawiac o...",
+        "dutch": "praten (over)",
+        "tip": "",
+        "favourite": ""
+    },
+    "zgadywac ": {
+        "polish": "zgadywac ",
+        "dutch": "raden",
+        "tip": "",
+        "favourite": ""
+    },
+    "reagowac ": {
+        "polish": "reagowac ",
+        "dutch": "reageren",
+        "tip": "",
+        "favourite": ""
+    },
+    "padac (deszcz)": {
+        "polish": "padac (deszcz)",
+        "dutch": "regenen",
+        "tip": "",
+        "favourite": ""
+    },
+    "gigant": {
+        "polish": "gigant",
+        "dutch": "de reus",
+        "tip": "",
+        "favourite": ""
+    },
+    "wazne": {
+        "polish": "wazne",
+        "dutch": "belangrijk",
+        "tip": "",
+        "favourite": ""
+    },
+    "dostac ": {
+        "polish": "dostac ",
+        "dutch": "krijgen",
+        "tip": "",
+        "favourite": ""
+    },
+    "kierunek ": {
+        "polish": "kierunek ",
+        "dutch": "de richting",
+        "tip": "",
+        "favourite": ""
+    },
+    "prosto": {
+        "polish": "prosto",
+        "dutch": "rechtdoor",
+        "tip": "",
+        "favourite": ""
+    },
+    "na dole": {
+        "polish": "na dole",
+        "dutch": "beneden",
+        "tip": "",
+        "favourite": ""
+    },
+    "na gorze": {
+        "polish": "na gorze",
+        "dutch": "boven",
+        "tip": "",
+        "favourite": ""
+    },
+    "w dzisiejszych czasach": {
+        "polish": "w dzisiejszych czasach",
+        "dutch": "tegenwoordig",
+        "tip": "",
+        "favourite": ""
+    },
+    "rosnac": {
+        "polish": "rosnac",
+        "dutch": "groeien",
+        "tip": "",
+        "favourite": ""
+    },
+    "zamek blyskawiczny": {
+        "polish": "zamek blyskawiczny",
+        "dutch": "de rits",
+        "tip": "",
+        "favourite": ""
+    },
+    "wymieniac": {
+        "polish": "wymieniac",
+        "dutch": "ruilen",
+        "tip": "",
+        "favourite": ""
+    },
+    "przestronny ": {
+        "polish": "przestronny ",
+        "dutch": "ruim",
+        "tip": "",
+        "favourite": ""
+    },
+    "ekran ": {
+        "polish": "ekran ",
+        "dutch": "het scherm",
+        "tip": "",
+        "favourite": ""
+    },
+    "pisac ": {
+        "polish": "pisac ",
+        "dutch": "schrijven",
+        "tip": "",
+        "favourite": ""
+    },
+    "zly": {
+        "polish": "zly",
+        "dutch": "slecht",
+        "tip": "",
+        "favourite": ""
+    },
+    "zrozumiec": {
+        "polish": "zrozumiec",
+        "dutch": "snappen",
+        "tip": "",
+        "favourite": ""
+    },
+    "ogladac": {
+        "polish": "ogladac",
+        "dutch": "bekijken",
+        "tip": "",
+        "favourite": ""
+    },
+    "ciekawe": {
+        "polish": "ciekawe",
+        "dutch": "benieuwd",
+        "tip": "",
+        "favourite": ""
+    },
+    "nigdzie": {
+        "polish": "nigdzie",
+        "dutch": "nergens",
+        "tip": "",
+        "favourite": ""
+    },
+    "czasami": {
+        "polish": "czasami",
+        "dutch": "soms",
+        "tip": "",
+        "favourite": ""
+    },
+    "wciaz": {
+        "polish": "wciaz",
+        "dutch": "steeds",
+        "tip": "",
+        "favourite": ""
     }
 }

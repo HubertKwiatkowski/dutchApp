@@ -1,6 +1,7 @@
 import os
 import json
 
+
 import quiz
 
 
@@ -10,31 +11,20 @@ from kivy.uix.label import Label
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.textinput import TextInput
 from kivy.uix.button import Button
+from kivy.uix.widget import Widget
+from kivy.properties import ObjectProperty
+
 
 # jsonFilePath = os.path.join('.', 'dutchApp', 'data', 'vocabulary.json')
 #   with open(jsonFilePath, 'w', encoding='utf-8') as jsonf:
 #       jsonf.write(json.dumps(data, indent=4))
 
-class MyGrid(GridLayout):
-    def __init__(self, **kwargs):
-        super(MyGrid, self).__init__(**kwargs)
-        self.cols = 1
+class MyGrid(Widget):
+    pyNumber = ObjectProperty(None)
 
-        self.add_widget(Label(text='How many questions would you like to answer?', font_size=30))
-
-        self.questionNumber = TextInput(multiline=False)
-
-        self.add_widget(self.questionNumber)
-
-        self.submit = Button(text="New test", font_size=40)
-        self.submit.bind(on_press=self.pressed)
-        self.add_widget(self.submit)
-
-    def pressed(self, instance):
-        number = self.questionNumber.text
-        try
-        self.questionNumber.text = ''
-
+    def btn(self):
+        print(self.pyNumber.text)
+        self.pyNumber.text = ''
 
 
 class DutchPracticeApp(App):

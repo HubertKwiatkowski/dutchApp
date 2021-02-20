@@ -18,5 +18,9 @@ def updateJson(csvFilePath, jsonFilePath):
         jsonf.write(json.dumps(data, indent=4))
 
 
+updateJson(csvFilePath, jsonFilePath)
+
+"""
 def openJson(jsonFilePath):
     with open(jsonFilePath, )
+"""
