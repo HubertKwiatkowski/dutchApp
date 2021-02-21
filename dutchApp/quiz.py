@@ -14,7 +14,24 @@ def openCsv():
         for line in readCsv:
             vocabulary.append(line)
 
+    return vocabulary
 
+
+def singleQuestion():
+    """Create a single question."""
+    voc = openCsv()
+    random.shuffle(voc)
+
+    wrongAnswers = []
+
+    for word in range(len(voc)):
+        wrongAnswers.append(voc[word][1])
+
+    question = voc[0][0]
+    correctAnswer = wrongAnswers.pop(0)
+    wrongAnswers = random.sample(wrongAnswers, 3)
+
+    return question, correctAnswer, wrongAnswers
 
 def createEasyQuiz():
     pass

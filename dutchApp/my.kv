@@ -1,7 +1,7 @@
 WindowManager:
     MainWindow:
     QuestionWindow:
-    AnswerWindow:
+
 
 <MainWindow>:
     name: 'start'
@@ -11,7 +11,6 @@ WindowManager:
         cols:1
         size: root.width - 100, root.height - 200
         
-
         Label:
             font_size: 30
             text: 'How many questions do you want to have?'
@@ -35,81 +34,51 @@ WindowManager:
     GridLayout:
         cols:1
         size: root.width, root.height
-        pyPolish: kvPolish
-        pyDutch1: kvDutch1
-        pyDutch2: kvDutch2
-        pyDutch3: kvDutch3
-        pyDutch4: kvDutch4
-
-
+  
         Label:
-            id: kvPolish
             font_size: 20
-            text: 'polish word'
+            text: root.Polish
 
         GridLayout:
             cols:2
 
             Button:
-                id: kvDutch1
                 font_size: 20
-                text: 'first dutch word'
+                text: root.Dutch1
                 on_release:
-                    app.root.current= 'answer'
-                    root.manager.transition.direction= 'right'
+                    root.checkAnswer()
 
             Button:
-                id: kvDutch2
                 font_size: 20
-                text: 'second dutch word'
+                text: root.Dutch2
                 on_release:
-                    app.root.current= 'answer'
-                    root.manager.transition.direction= 'right'
+                    root.checkAnswer()
 
             Button:
-                id: kvDutch3
                 font_size: 20
-                text: 'third dutch word'
+                text: root.Dutch3
                 on_release:
-                    app.root.current= 'answer'
-                    root.manager.transition.direction= 'right'
+                    root.checkAnswer()
 
             Button:
-                id: kvDutch4
                 font_size: 20
-                text: 'fourth dutch word'
+                text: root.Dutch4
                 on_release:
-                    app.root.current= 'answer'
-                    root.manager.transition.direction= 'right'
+                    root.checkAnswer()
 
+        GridLayout:
+            cols:2
 
-        Button:
-            text: 'Go Back'
-            on_release:
-                app.root.current= 'start'
-                root.manager.transition.direction= 'up'
+            Button:
+                font_size: 20
+                text: 'Go Back'
+                on_release:
+                    root.reset()
+                    app.root.current= 'start'
+                    root.manager.transition.direction= 'up'
 
-
-<AnswerWindow>:
-    name: 'answer'
-    
-    GridLayout:
-        cols:1
-
-        Label:
-            font_size: 20
-            text: 'On to the next one!'
-
-        Button:
-            font_size: 20
-            text: 'Next question'
-            on_release:
-                app.root.current= 'question'
-                root.manager.transition.direction= 'right'
-
-        Button:
-            font_size: 20
-            text: 'Start menu'
-            on_release:
-                app.root.current= 'start'
-                root.manager.transition.direction= 'up'
+            Button:
+                font_size: 20
+                text: 'Next question'
+                on_release:
+                    root.generateQuestion()
