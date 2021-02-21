@@ -15,6 +15,7 @@ def openCsv():
             vocabulary.append(line)
 
 
+
 def createEasyQuiz():
     pass
 

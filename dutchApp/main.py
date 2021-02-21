@@ -14,12 +14,20 @@ class MainWindow(Screen):
     def btn(self):
         try:
             self.questions = int(self.pyNumber.text)
+            self.pyNumber.text = ''
         except:
             self.pyNumber.text = 0
-        
     
 
 class QuestionWindow(Screen):
+    pyPolish = ObjectProperty(None)
+    pyDutch1 = ObjectProperty(None)
+    pyDutch2 = ObjectProperty(None)
+    pyDutch3 = ObjectProperty(None)
+    pyDutch4 = ObjectProperty(None)
+
+
+class AnswerWindow(Screen):
     pass
 
 class WindowManager(ScreenManager):
@@ -40,18 +48,14 @@ if __name__ == '__main__':
 
 # TODO: import words
 
-# TODO: interface
-
 # TODO: basic test
 
 # TODO: different difficulties
 
-# TODO: favorite - words anwered incorrectly
+# TODO: favorite - words answered incorrectly
 
 # TODO: fiszki
 
 # TODO: tips - drawings
 
 # TODO: score?
-
-# TODO: json file update
