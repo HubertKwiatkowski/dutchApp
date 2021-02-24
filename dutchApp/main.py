@@ -32,27 +32,41 @@ class QuestionWindow(Screen):
     Dutch3 = StringProperty('C')
     Dutch4 = StringProperty('D')
 
-    def generateQuestion(self):
 
+
+    def generateQuestion(self):
+        # TODO: add change of buttons colour to standard
         quiz = q.singleQuestion()
         print(quiz)
         
-        question = quiz[0]
-        correctAnswer = quiz[1]
-        wrongAnswers = quiz[2]
-        answerOptions = [correctAnswer] + wrongAnswers
-        random.shuffle(answerOptions)
+        self.question = quiz[0]
+        self.correctAnswer = quiz[1]
+        self.wrongAnswers = quiz[2]
+        self.answerOptions = [self.correctAnswer] + self.wrongAnswers
+        random.shuffle(self.answerOptions)
 
-        self.Polish = question
-        self.Dutch1 = answerOptions[0]
-        self.Dutch2 = answerOptions[1]
-        self.Dutch3 = answerOptions[2]
-        self.Dutch4 = answerOptions[3]
-
-        return correctAnswer
-
-    def checkAnswer(self):
-        pass
+        self.Polish = self.question
+        self.Dutch1 = self.answerOptions[0]
+        self.Dutch2 = self.answerOptions[1]
+        self.Dutch3 = self.answerOptions[2]
+        self.Dutch4 = self.answerOptions[3]
+        
+    def checkAnswer(self, number):
+        name = ('Dutch%s' % (number))
+        value = self.answerOptions[number-1]
+        answer = self.correctAnswer
+        if value == self.correctAnswer:
+            print('GOOD')
+            """"val1 = ''
+            val2 = [1,0,0,1]
+            name1 = (name+'.background_normal')
+            name2 = (name+'.background_color')
+            setattr(self, name1, val1)
+            setattr(self, name2, val2)"""
+            # TODO: add change of button colour to green
+        else:
+            print('WRONG')
+            # TODO: add change of button colours to green/red
 
     def reset(self):
         self.Polish = 'POLISH WORD'
@@ -78,9 +92,6 @@ if __name__ == '__main__':
     DutchApp().run()
 
 
-# TODO: import words
-
-# TODO: basic test
 
 # TODO: different difficulties
 

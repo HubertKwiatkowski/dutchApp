@@ -46,25 +46,29 @@ WindowManager:
                 font_size: 20
                 text: root.Dutch1
                 on_release:
-                    root.checkAnswer()
+                    root.checkAnswer(1)
+                    root.generateQuestion()
 
             Button:
                 font_size: 20
                 text: root.Dutch2
                 on_release:
-                    root.checkAnswer()
+                    root.checkAnswer(2)
+                    root.generateQuestion()
 
             Button:
                 font_size: 20
                 text: root.Dutch3
                 on_release:
-                    root.checkAnswer()
+                    root.checkAnswer(3)
+                    root.generateQuestion()
 
             Button:
                 font_size: 20
                 text: root.Dutch4
                 on_release:
-                    root.checkAnswer()
+                    root.checkAnswer(4)
+                    root.generateQuestion()
 
         GridLayout:
             cols:2
