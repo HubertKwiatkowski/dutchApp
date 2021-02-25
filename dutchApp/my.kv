@@ -1,35 +1,33 @@
 WindowManager:
     MainWindow:
-    QuestionWindow:
+    QuizWindow:
+    LearningWindow:
 
 
 <MainWindow>:
     name: 'start'
-    pyNumber: kvNumber
+    font_size: 30
+
 
     GridLayout:
-        cols:1
-        size: root.width - 100, root.height - 200
-        
-        Label:
-            font_size: 30
-            text: 'How many questions do you want to have?'
-
-        TextInput:
-            id: kvNumber
-            multiline: False
+        cols:2
 
         Button:
-            font_size: 30
+            text: 'Start learning'
+            on_release:
+                app.root.current= 'learning'
+                root.manager.transition.direction= 'down'
+
+
+        Button:
             text: 'Start the Quiz'
             on_release:
-                root.btn()
-                app.root.current= 'question'
+                app.root.current= 'quiz'
                 root.manager.transition.direction= 'down'
                 
 
-<QuestionWindow>:
-    name: 'question'
+<QuizWindow>:
+    name: 'quiz'
 
     GridLayout:
         cols:1
@@ -86,3 +84,24 @@ WindowManager:
                 text: 'Next question'
                 on_release:
                     root.generateQuestion()
+
+
+<LearningWindow>:
+    name: 'learning'
+
+    GridLayout:
+        clos: 1
+
+            Label:
+                font_size: 20
+                text: Polish
+
+            Label:
+                font_size: 20
+                text: Dutch
+            
+            Button:
+                font_size: 20
+                text: 'Next word'
+                on_release:
+                    root.generateWord()

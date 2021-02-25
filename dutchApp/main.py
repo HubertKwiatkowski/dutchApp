@@ -9,22 +9,14 @@ from kivy.properties import StringProperty
 
 
 import quiz as q
+import learning as l
 
 
 class MainWindow(Screen):
-
-    pyNumber = ObjectProperty(None)
-
-    def btn(self):
-        try:
-            self.questions = int(self.pyNumber.text)
-            self.pyNumber.text = ''
-
-        except:
-            self.pyNumber.text = 0
+    pass
     
 
-class QuestionWindow(Screen):
+class QuizWindow(Screen):
 
     Polish = StringProperty('POLISH WORD')
     Dutch1 = StringProperty('A')
@@ -32,12 +24,9 @@ class QuestionWindow(Screen):
     Dutch3 = StringProperty('C')
     Dutch4 = StringProperty('D')
 
-
-
     def generateQuestion(self):
         # TODO: add change of buttons colour to standard
         quiz = q.singleQuestion()
-        print(quiz)
         
         self.question = quiz[0]
         self.correctAnswer = quiz[1]
@@ -57,7 +46,7 @@ class QuestionWindow(Screen):
         answer = self.correctAnswer
         if value == self.correctAnswer:
             print('GOOD')
-            """"val1 = ''
+            """val1 = ''
             val2 = [1,0,0,1]
             name1 = (name+'.background_normal')
             name2 = (name+'.background_color')
@@ -74,6 +63,19 @@ class QuestionWindow(Screen):
         self.Dutch2 = 'B'
         self.Dutch3 = 'C'
         self.Dutch4 = 'D'
+
+
+class LearningWindow(Screen):
+
+    Polish = StringProperty('POLISH WORD')
+    Dutch = StringProperty('DUTCH WORD')
+
+    def generateWord(self):
+
+        learning = l.singleWord()
+
+        self.Polish = learning[0]
+        self.Dutch = learning[1]
 
 
 class WindowManager(ScreenManager):
