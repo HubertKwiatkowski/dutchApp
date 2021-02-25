@@ -67,15 +67,15 @@ class QuizWindow(Screen):
 
 class LearningWindow(Screen):
 
-    Polish = StringProperty('POLISH WORD')
-    Dutch = StringProperty('DUTCH WORD')
+    Polish = ObjectProperty('POLISH WORD')
+    Dutch = ObjectProperty('DUTCH WORD')
 
     def generateWord(self):
 
         learning = l.singleWord()
 
-        self.Polish = learning[0]
-        self.Dutch = learning[1]
+        self.Polish = str(learning[0][0])
+        self.Dutch = str(learning[0][1])
 
 
 class WindowManager(ScreenManager):
@@ -98,8 +98,6 @@ if __name__ == '__main__':
 # TODO: different difficulties
 
 # TODO: favorite - words answered incorrectly
-
-# TODO: fiszki
 
 # TODO: tips - drawings
 

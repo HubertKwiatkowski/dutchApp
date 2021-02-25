@@ -5,26 +5,34 @@ WindowManager:
 
 
 <MainWindow>:
-    name: 'start'
-    font_size: 30
-
+    name: 'main'
 
     GridLayout:
-        cols:2
+        cols:1
+
+        GridLayout:
+            cols:2
+
+            Button:
+                font_size: 30
+                text: 'Start learning'
+                on_release:
+                    app.root.current= 'learning'
+                    root.manager.transition.direction= 'down'
+
+
+            Button:
+                font_size: 30
+                text: 'Start the Quiz'
+                on_release:
+                    app.root.current= 'quiz'
+                    root.manager.transition.direction= 'down'
 
         Button:
-            text: 'Start learning'
-            on_release:
-                app.root.current= 'learning'
-                root.manager.transition.direction= 'down'
-
-
-        Button:
-            text: 'Start the Quiz'
-            on_release:
-                app.root.current= 'quiz'
-                root.manager.transition.direction= 'down'
-                
+            font_size: 30
+            text: 'Quit'
+            on_press:
+                app.stop()            
 
 <QuizWindow>:
     name: 'quiz'
@@ -73,10 +81,10 @@ WindowManager:
 
             Button:
                 font_size: 20
-                text: 'Go Back'
+                text: 'Main Window'
                 on_release:
                     root.reset()
-                    app.root.current= 'start'
+                    app.root.current= 'main'
                     root.manager.transition.direction= 'up'
 
             Button:
@@ -90,18 +98,28 @@ WindowManager:
     name: 'learning'
 
     GridLayout:
-        clos: 1
+        cols: 1
 
-            Label:
-                font_size: 20
-                text: Polish
+        Label:
+            font_size: 30
+            text: root.Polish
 
-            Label:
-                font_size: 20
-                text: Dutch
-            
+        Label:
+            font_size: 30
+            text: root.Dutch
+
+        GridLayout:
+            cols:2
+
             Button:
-                font_size: 20
+                font_size: 30
+                text: 'Main Window'
+                on_release:
+                    app.root.current= 'main'
+                    root.manager.transition.direction= 'up'
+
+            Button:
+                font_size: 30
                 text: 'Next word'
                 on_release:
                     root.generateWord()
